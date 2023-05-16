@@ -5,7 +5,7 @@ import { useMemo } from "react";
 
 import { typePolicies } from "./typePolicies";
 
-// for static geenration of pages, we don't need auth there
+// for static generation of pages, we don't need auth there
 export const serverApolloClient = new ApolloClient({
   link: createHttpLink({ uri: API_URI }),
   cache: new InMemoryCache({ typePolicies }),
